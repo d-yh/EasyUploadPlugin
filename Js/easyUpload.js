@@ -5,7 +5,7 @@
 
     var methods = {
         init:function(options){
-            var _options = $(defaultJson,options);
+            var _options = $.extend(defaultJson,options);
             return this.each(function(){//为dom节点绑定事件
                 $(this).bind("change",function(){
                     listener.fileChange(this.files,_options);

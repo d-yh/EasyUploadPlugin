@@ -6,11 +6,20 @@
     <link rel="stylesheet" href="Css/easyUpload.css">
 </head>
 <body>
-    <input type="file" id="easyUpload">
+<div class="easyUpload">
+    <a href="javascript:;" >
+        <input type="file" multiple name="" id="easyUpload">
+    </a>
+</div>
+
+
 </body>
 <script src="Js/jquery.min.js"></script>
 <script src="Js/easyUpload.js"></script>
 <script>
-    $("#easyUpload").easyUpload({url:""});
+    $("#easyUpload").easyUpload({
+        isAutoUpload:false,//是否自动上传
+        url:"http://localhost:8080/TestUploadFile/servlet/UpLoadServlet",//服务器地址
+    });
 </script>
 </html>

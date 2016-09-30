@@ -1,0 +1,105 @@
+.easyUpload  a{
+    padding: 4px 15px;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    width: 60px;
+    height: 40px;
+    background: #4483f5 url("../img/upload.png") no-repeat center;
+    border-top: 1px solid #758fba;
+    border-right: 1px solid #6c84ab;
+    border-bottom: 1px solid #5c6f91;
+    border-left: 1px solid #6c84ab;
+    border-radius: 18px;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+.easyUpload  input[type=file] {
+    position: absolute;
+    font-size: 40px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+
+
+.easyUpload a:hover {
+    background: #356fd6  url("../img/upload.png") no-repeat center;
+}
+
+.easyUpload .progress{
+    width: 100px;
+    height: 20px;
+    display: block;
+    border: 1px solid;
+}
+
+.easyUpload .progress .bar{
+    text-align: left;
+    width: 30%;
+    background-color: coral;
+    height: 20px;
+}
+
+
+
+/*.container {
+    width:30%;
+    margin:0 auto
+}
+.title {
+    background:#545965;
+    color:#fff;
+    padding:15px;
+    float:left;
+    position:relative;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-bottomleft:5px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px
+}
+.bar-unfill {
+    height:15px;
+    display:block;
+    background:#fff;
+    width:100%;
+    border-radius:8px
+}
+
+.bar-fill {
+    height:15px;
+    display:block;
+    background:#45c9a5;
+    width:0;
+    border-radius:8px;
+    -webkit-transition:width .8s ease;
+    -moz-transition:width .8s ease;
+    transition:width .8s ease;
+    -webkit-animation:progressbar 7s infinite;
+    animation:progressbar 7s infinite
+}
+@-webkit-keyframes progressbar {
+    from {
+        width:0
+    }
+    to {
+        width:100%
+    }
+}
+!* Standard syntax *!
+@keyframes progressbar {
+    from {
+        width:0
+    }
+    to {
+        width:100%
+    }
+}*/
+
